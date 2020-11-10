@@ -1,0 +1,20 @@
+-
+  name: Passport
+  type: passport
+  issuer: United States Department of States
+  death.notice.schedule: 90 days
+  death.notice.online:  https://example.com/api/deceased
+-
+  name: Social Security Number
+  type: taxID
+  issuer: Social Security Administration
+  death.notice.instructios:  https://example.com/
+-
+  name: Green Card
+  type: residenceCard
+  issuer: U.S. Citizenship and Naturalization Services
+-
+  name: Veterans Administration Benefits
+  type: federalBenefits
+  issuer: Veterans Administration
+  death.notice.instructions:  https://example.com/

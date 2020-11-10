@@ -1,0 +1,18 @@
+title: Model Wallet
+baseurl: 
+
+collections :
+  subjects :
+    output : true
+    permalink : /:collection/:name/index.html
+    name : "My Subjects"
+  holders :
+    output : false
+
+defaults :
+  -
+    scope :
+      path : ""
+      type : "subjects"
+    values :
+      layout : "subject"

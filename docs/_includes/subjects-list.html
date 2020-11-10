@@ -1,0 +1,7 @@
+<ul>
+  {% for subject in site.subjects %}
+  <li>
+    <a href="{{ subject.url | relative_url }}">{{ subject.legal-name }}</a>
+  </li>
+  {% endfor %}
+</ul>

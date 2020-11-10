@@ -1,0 +1,24 @@
+"wallet" : {
+  "name" : "John",
+  "addressResidence" : {
+    "address-street" : "",
+    "address-level2" : "Anytown",
+    "address-level1" : "California",
+    "postal-code" : "",
+    "country" : "USA"
+  },
+  "credentials" : [
+    {
+      "type" : "Social Security",
+      "issuer" : "Social Security Administration",
+      "name" : "Johnathon Doe",
+      "id" : "999-99-9999"
+    },
+    {
+      "type" : "California Drivers License",
+      "issuer" : "California Department of Motor Vehicles",
+      "name" : "Johnny Doe",
+      "id" : "CA-40"
+    }
+  ]
+}

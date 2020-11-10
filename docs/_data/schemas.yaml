@@ -1,0 +1,20 @@
+- name:
+    - id: given-name
+      label: Given name
+      type: text
+    - id: family-name
+      label: Family name
+      type: text
+- address:
+    - id : address-street
+      label : Street
+      type : text
+    - id : address-level1
+      label : State
+      type : text
+    - id : address-level2
+      label: City
+      type: text
+    - id : Country
+      label: Country
+      type: text

@@ -1,0 +1,76 @@
+body {
+  font-family:sans-serif;
+  line-height:1.4;
+  margin:0;
+  padding:0;
+  max-width:40em;
+
+}
+main, body > header, body > footer {
+  padding:.5em 1em;
+  background:#fff;
+  position:relative;
+}
+body > header, body > footer {
+  color:#999
+}
+body > header {
+  border-bottom: 1px solid #999;
+}
+body > header * {
+  display:inline-block;
+}
+body > header p {
+  margin:0;
+}
+body > header nav {
+  position: absolute;
+  right: .5em;
+}
+body > header nav a {
+  margin-right:.5em;
+}
+/* side by side  */
+dl {
+  display: grid;
+  grid-template-columns: 8em auto;
+  grid-template-areas: "label value"
+}
+
+dt {
+  grid-column: label;
+}
+
+dd {
+  grid-column: value;
+  margin:0;
+  font-weight:bold;
+}
+
+details {
+  margin: 1em;
+}
+
+details summary {
+  margin: 0 -1em;
+  font-weight: bold;
+}
+
+article.card {
+  margin: 1em 0;
+  padding: 1em;
+  background: #eee;
+  border-radius: 8px;
+}
+
+article.card header * {
+  margin:0;
+  font-size: 1rem;
+}
+
+.badge:before {
+  content:"("
+}
+.badge:after {
+  content:")"
+}

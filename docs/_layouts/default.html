@@ -1,0 +1,23 @@
+{% include meta-head.html %}
+{% include global-header.html %}
+<main>
+  <article class="">
+    <header>
+        <h1>{{page.title}}</h1>
+        <p>Published: {{site.time | date_to_string: "ordinal", "US"}}</p>
+    </header>
+    {{content}}
+    <section>
+      <a href="#">Notifications (2)</a>
+    </section>
+  </article>
+  <section>
+    <header>
+      <h2>Subjects </h2>
+    </header>
+    {% include subjects-list.html %}
+    <button>Add Subject</button>
+  </section>
+</main>
+{% include global-footer.html %}
+{% include meta-end.html %}

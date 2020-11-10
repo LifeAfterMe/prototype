@@ -1,0 +1,54 @@
+<article class="subject">
+  <header>
+    <!-- navigation toolbar -->
+    <p aria-label="breadcrumb navigation">
+      <a href="{{site.baseurl}}/index.html">Home</a> | Subject
+    </p>
+    <p aria-label="toolbar">
+      <button>Identity Builder</button>
+      <button>Create Plan</button>
+      <a href="#">Notifications (1)</a>
+      <a href="#">Plans (0)</a>
+    </p>
+    <h1>{{page.legal-name}}</h1>
+  {% for address in page.addresses %}
+    <p id="address{% increment my_counter %}" class="address">
+      <div>{{address.address-street }}</div>
+      <span>{{address.address-level2 }}</span>,
+      <span>{{address.address-level1 }}</span>
+      <span>{{address.postal-code}}</span>
+      <span>{{address.country}}</span>
+    </p>
+  {% endfor %}
+    <button>Edit Profile</button>
+  </header>
+  <details open>
+    <summary>Credentials &ndash; <span class="count badge">{{page.credentials.size | default: 0}}<span></summary>
+    {% for doc in page.credentials %}
+    {% include card.html %}
+    {% else %}
+    <p>No credentials.</p>
+    {% endfor %}
+    <button>Add Credential</button>
+  </details>
+
+  <details open>
+    <summary>Assets &ndash; <span class="count badge">{{page.assets.size | default: 0}}<span></summary>
+    {% for doc in page.assets %}
+    {% include card.html %}
+    {% else %}
+    <p>No assets.</p>
+    {% endfor %}
+    <button>Add Asset</button>
+  </details>
+  <details open>
+    <summary>Liabilities &ndash; <span class="count badge">{{page.liabilities.size | default: 0}}<span></summary>
+    {% for doc in page.liabilities %}
+      {% include card.html %}
+    {% else %}
+      <p>No liabilities.</p>
+    {% endfor %}
+    <button>Add Liability</button>
+</details>
+
+</article>
