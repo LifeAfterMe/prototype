@@ -1,0 +1,7 @@
+id: ssn
+title: Social Security Number
+type: taxID
+issuer: Social Security Administration
+changes:
+  - type: death
+    instructios:  https://example.com/

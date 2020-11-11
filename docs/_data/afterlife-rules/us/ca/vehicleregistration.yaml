@@ -1,0 +1,7 @@
+id: vehicleRegistration
+title: California Vehicle Registration
+type: vehicleRegistration
+issuer: California Department of Motor Vehicles
+changes:
+  - type: death
+    instructions:  https://example.com/faq

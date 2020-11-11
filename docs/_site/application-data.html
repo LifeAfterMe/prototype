@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application data | Model Wallet</title>
+    <link rel="stylesheet" href="/assets/base.css">
+  </head>
+  <body class="dev">
+
+<header>
+  Wallet Model | Developer Info
+</header>
+<main>
+  <article class="">
+    <header>
+        <h1>Application data</h1>
+    </header>
+    <h2 id="afterlife-rules">afterlife rules</h2>
+<pre>1. us
+      1. passport
+        {"id"=&gt;"passport", "title"=&gt;"Passport", "type"=&gt;"passport", "issuer"=&gt;"United States Department of States", "changes"=&gt;[{"type"=&gt;"death", "instructions"=&gt;"https://example.com/api/deceased", "due-by"=&gt;"90 days"}]}
+      2. ssn
+        {"id"=&gt;"ssn", "title"=&gt;"Social Security Number", "type"=&gt;"taxID", "issuer"=&gt;"Social Security Administration", "changes"=&gt;[{"type"=&gt;"death", "instructios"=&gt;"https://example.com/"}]}
+      3. residencecard
+        {"id"=&gt;"residencecard", "title"=&gt;"Green Card", "type"=&gt;"residenceCard", "issuer"=&gt;"U.S. Citizenship and Naturalization Services", "changes"=&gt;[{"type"=&gt;"death", "instructions"=&gt;"https://example.gov/"}]}
+      4. ca
+          1. vehicleregistration
+            {"id"=&gt;"vehicleRegistration", "title"=&gt;"California Vehicle Registration", "type"=&gt;"vehicleRegistration", "issuer"=&gt;"California Department of Motor Vehicles", "changes"=&gt;[{"type"=&gt;"death", "instructions"=&gt;"https://example.com/faq"}]}
+          2. driverslicense
+            {"id"=&gt;"driversLicense", "title"=&gt;"California Drivers License", "type"=&gt;"driversLicense", "issuer"=&gt;"California Department of Motor Vehicles", "changes"=&gt;[{"type"=&gt;"death", "instructions"=&gt;"https://example.com/faq"}]}
+      5. fl
+        {}
+  </pre>
+
+<h2 id="schemas">schemas</h2>
+<pre>
+  1. name
+    {"id"=&gt;"name", "label"=&gt;"Name", "type"=&gt;"group", "data"=&gt;[{"id"=&gt;"given-name", "label"=&gt;"Given name", "type"=&gt;"text"}, {"id"=&gt;"family-name", "label"=&gt;"Family name", "type"=&gt;"text"}]}
+  
+  2. address
+    {"id"=&gt;"address", "label"=&gt;"Address", "type"=&gt;"group", "data"=&gt;[{"id"=&gt;"address-street", "label"=&gt;"Street", "type"=&gt;"text"}, {"id"=&gt;"address-level1", "label"=&gt;"State", "type"=&gt;"text"}, {"id"=&gt;"address-level2", "label"=&gt;"City", "type"=&gt;"text"}, {"id"=&gt;"Country", "label"=&gt;"Country", "type"=&gt;"text"}]}
+  3. us
+      1. ca
+        {}
+      2. fl
+        {}
+  </pre>
+
+<h2 id="collections">Collections</h2>
+<p>3 collections</p>
+<pre>
+  [#&lt;Jekyll::Document _holders/100.yaml collection=holders&gt;, #&lt;Jekyll::Document _holders/200.yaml collection=holders&gt;]
+
+  []
+
+  [#&lt;Jekyll::Document _subjects/001.md collection=subjects&gt;, #&lt;Jekyll::Document _subjects/002.md collection=subjects&gt;]
+</pre>
+
+  </article>
+</main>
+<footer>
+  <p>&copy; Model Wallet</p>
+  <section>
+    <h2>Developer</h2>
+    <a href="/application-data.html">Application Data</a>
+  </section>
+</footer>
+
+  </body>
+</html>
+

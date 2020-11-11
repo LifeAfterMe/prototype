@@ -1,0 +1,10 @@
+id : name
+label : Name
+type : group
+data:
+  - id: given-name
+    label: Given name
+    type: text
+  - id: family-name
+    label: Family name
+    type: text

@@ -1,0 +1,7 @@
+id: residencecard
+title: Green Card
+type: residenceCard
+issuer: U.S. Citizenship and Naturalization Services
+changes:
+  - type: death
+    instructions:  https://example.gov/

@@ -1,0 +1,8 @@
+id: passport
+title: Passport
+type: passport
+issuer: United States Department of States
+changes:
+  - type: death
+    instructions:  https://example.com/api/deceased
+    due-by: 90 days
