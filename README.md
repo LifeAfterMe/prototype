@@ -41,7 +41,7 @@ JSON files for declaring data to be used in content generation.  Vision is this 
 
 > Example object reference: __data.afterlife-rules.us.passport__
 
-* [Rules schemas](rules-schemas.md)
+* [Rules schemas](rules-schema.md)
 * [Document schemas](document-schemas.md)
 
 
